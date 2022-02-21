@@ -14,10 +14,6 @@ class BottomNavBar extends StatelessWidget {
       width: double.infinity,
       decoration: BoxDecoration(
         color: Colors.white,
-        borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(20),
-          topRight: Radius.circular(20),
-        ),
         boxShadow: [
           BoxShadow(
             offset: Offset(0, -7),

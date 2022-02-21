@@ -6,10 +6,14 @@ AppBar homeAppBar(BuildContext context) {
   return AppBar(
     backgroundColor: Colors.white,
     elevation: 0,
-    leading: IconButton(
-      icon: SvgPicture.asset("assets/icons/menu.svg"),
-      onPressed: () {},
-    ),
+    leading: Builder(builder: (context) {
+      return IconButton(
+        icon: SvgPicture.asset("assets/icons/menu.svg"),
+        onPressed: () {
+          Scaffold.of(context).openDrawer();
+        },
+      );
+    }),
     title: Center(
       child: RichText(
         text: TextSpan(

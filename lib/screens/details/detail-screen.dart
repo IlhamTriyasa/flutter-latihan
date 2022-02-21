@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:smooth_star_rating/smooth_star_rating.dart';
+import 'package:test_instalasi_flutter/components/bottom_navbar.dart';
 import 'package:test_instalasi_flutter/constants.dart';
 import 'package:test_instalasi_flutter/screens/details/components/app_bar.dart';
 import 'package:test_instalasi_flutter/screens/details/components/body.dart';
@@ -14,6 +15,7 @@ class DetailsScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: kPrimaryColor,
       appBar: detailsAppBar(context: context),
+      bottomNavigationBar: BottomNavBar(),
       body: Body(),
     );
   }

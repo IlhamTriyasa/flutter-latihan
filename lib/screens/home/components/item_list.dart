@@ -36,7 +36,7 @@ class ItemList extends StatelessWidget {
           ),
           ItemCard(
             svgSrc: "assets/icons/burger_beer.svg",
-            title: "Burger & Beer",
+            title: "Food & Beverages",
             shopName: "McDonalds",
             press: () {},
           ),
